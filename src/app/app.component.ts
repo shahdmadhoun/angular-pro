@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { NgModule } from "@angular/core";
 
 @Component({
   selector: "app-root",
@@ -12,4 +13,10 @@ export class AppComponent {
     { name: "malak", age: 15 },
     { name: "ahmad", age: 25 }
   ];
+  add() {
+    this.students.push({
+      "name": this.studentName,
+      "age": this.studentAge
+    });
+  }
 }

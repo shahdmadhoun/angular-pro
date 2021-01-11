@@ -1,2 +1,8 @@
 <h1>{{ title }} </h1>
 <p *ngFor="let student of students"><span *ngIf="student.age>18"> name :{{ student.name }}</span></p>
+
+<label>name: </label>
+<input  [(ngModel)]="studentName" type="text"><br><br>
+<label>Age: </label>&nbsp;&nbsp;
+<input [(ngModel)]="studentAge" type="text"><br><br>
+<input type="submit" (click)="add()">
